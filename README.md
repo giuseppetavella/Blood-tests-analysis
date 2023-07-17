@@ -22,4 +22,13 @@ In this dataset there are only 11 observations. This is the only drawback at the
 I'm completely aware this is not statistically significant for drawing insights, however the matter touches me personally, and for me this is much more motivating to work on than any other "big real life dataset" on topics I'm not interested in.
 
 
+## Prerequisites
+The data needs to be in .csv format. 
+In the future I plan on implementing a feature where you can take a picture of the blood results (literally, the paper they give you), upload the picture, and the program will automatically analyze that data.
+However for now if the data is not in csv format already, unfortunately it needs to be first typed manually.
+
+
+
+
+
 
