@@ -1,4 +1,6 @@
-![HemoAI logo](https://drive.google.com/file/d/1nNOSvoxjoLSqNeagt7-FS2d-q76JXxpO/view?usp=sharing "Text to show on mouseover")
+![alt text for screen readers](https://i.postimg.cc/7ZCpbDBC/hemoai-logo-small.png "Text to show on mouseover")
+
+# Blood Analysis
 
 ## Context
 Is there any pattern in my blood, anything interesting? 
