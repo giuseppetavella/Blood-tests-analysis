@@ -1,0 +1,27 @@
+short,long,type
+WBC,White Blood Count,numeric
+BC,Blood Count,numeric
+HGB,Hemoglobin,numeric
+HCT,Hematocrit,numeric
+MCV,Mean Corpuscular Volume,numeric
+MCH,Mean Corpuscular Hemoglobin,numeric
+MCHC,Mean Corpuscular Hemoglobin Concentration,numeric
+PLT,Platelets,numeric
+NEUT,Neutrophils,numeric
+LYMPH,Lymphocytes,numeric
+EOS,Eosinophils,numeric
+chol,Cholesterol,numeric
+ALT,Alanine Transaminase,numeric
+AST,Aspartate Transferase,numeric
+creat,Creatinine,numeric
+trigl,Triglycerides,numeric
+prot_tot,Total protein,numeric
+ser_iron,Serum iron,numeric
+anti_HCV,Hepatitis C virus Antibodies,no_numeric
+HCVNAT,Nucleic Acid Amplification Testing for HCV,no_numeric
+HIV_NAT,Nucleic Acid Amplification for HIV,no_numeric
+HBV_NAT,Nucleic Acid Amplification for Hepatitis B virus,no_numeric
+virology,Screening Virology (HBsAg- HCV- HIV- syphilis),no_numeric
+HIV_COMBO,Human Immunodeficiency Virus combo,no_numeric
+anti_syph,Syphilis Antibodies,no_numeric
+HBsAg,Hepatitis B surface antigen,no_numeric

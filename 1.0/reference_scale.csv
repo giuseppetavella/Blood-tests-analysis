@@ -1,0 +1,19 @@
+comp,measure,min,max
+WBC,10^3/μl,3.7,10
+BC,10^6/μl,4.06,6
+HGB,x g/dl,12,16.5
+HCT,%,37,50
+MCV,fl,80,98
+MCH,pg,26,31.2
+MCHC,g/dl,31,36
+PLT,10^3/μl,150,400
+NEUT,%,40,70
+LYMPH,%,20,40
+EOS,%,0,7
+chol,mg/dl,0,239
+ALT,U/L,0,50
+AST,U/L,17,59
+creat,mg/dl,0.66,1.25
+trigl,mg/dl,0,200
+prot_tot,g/dl,6.3,8.3
+ser_iron,μg/dl,37,158

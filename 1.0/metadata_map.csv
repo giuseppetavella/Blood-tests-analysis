@@ -1,0 +1,9 @@
+short,long,type
+blood_type,Blood Type,blood
+rh_pheno,Rh phenotype,blood
+kell_antigen,Kell Antigen,blood
+rh_factor,Rh factor,blood
+date_test,Date test,test
+id_test,ID test,test
+num_test,Number Test,test
+sex,Sex,person
