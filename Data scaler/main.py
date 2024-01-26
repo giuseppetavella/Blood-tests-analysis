@@ -135,7 +135,7 @@ def load_data(file_name):
 
 
 
-def clean_data(M,components_ignore):
+def clean_data(M,components_ignore,target_range):
     # FILTER A: remove unwanted columns
     columns_indexes=[]
 
@@ -172,13 +172,12 @@ def clean_data(M,components_ignore):
     # FILTER B: cast all other columns values to float
     for row in M[1:]:
         for j in range(len(M[0])):
-            # assumption - replacing empty strings with 0
+            # assumption - replacing empty strings with mid of target range
             if row[j].strip()=='':
-                row[j]=0
+                row[j]=(target_range[0]+target_range[1])/2
             # cast to float every value
             else:
                 row[j]=float(row[j])
-
 
 
 
@@ -228,16 +227,18 @@ def save_output_matrix_to_file(output_matrix,file_name):
 def main():
     # CUSTOMIZE HERE
     # in what new range do I want the new values scaled in?
-    target_range=(0,1)
+    min_range=float(input('Insert min range:'))
+    max_range=float(input('Insert max range:'))
+    target_range=(min_range,max_range)
     # what's the file name that contains the reference scale?
     ref_scale_file_name='ref_scale.csv'
     # what's the file name that contains the column names to be ignored?
     components_ignore_file_name= 'components_ignore.csv'
     # what's the name of the file that contains the input data to work with?
-    data_input_file_name= 'input_data.csv'
+    file_name_without_ext=input('Insert the file name you want to analyze (without .csv):')
+    data_input_file_name= file_name_without_ext+'.csv'
     # how do you want the new file with output values to be called?
-    data_output_file_name= 'output_data.csv'
-
+    data_output_file_name= file_name_without_ext+'_output.csv'
     # this dictionary is the reference scale {component: min,max,measure}
     ref_scale=get_ref_scale_from_file(ref_scale_file_name)
     # this is the list of column names to be ignored (they must not be analyzed)
@@ -245,10 +246,12 @@ def main():
     # # this is the matrix (list of lists) with values to analyze
     data_input_matrix=load_data(data_input_file_name)
     # modify the original input matrix to get exactly the matrix you want to work with
-    clean_data(data_input_matrix,components_ignore)
+    clean_data(data_input_matrix,components_ignore,target_range)
     # scaled matrix with target range, for example (0,1)
     data_output_matrix=scale_matrix(data_input_matrix,ref_scale,target_range)
     # # save scaled matrix to a new file
     save_output_matrix_to_file(data_output_matrix,data_output_file_name)
+
+    print('Done.')
 
 main()
